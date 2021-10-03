@@ -1,0 +1,2910 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>bitsgalore.org</title>
+    
+    
+    <meta name="author" content="Johan van der Knijff">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/themes/twitter/css/fonts.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/themes/twitter/css/rouge-github.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+
+  <body>
+
+    <div id="container">
+
+      <div id="header">
+
+        <div class="banner-header">
+          <a href="/"><img src="/images/banner-new.png" alt="bitsgalore banner" class="img-center" width="970" height="150"></a>
+		  <div class="banner-tagline">digital preservation - file formats</div>
+        </div>
+      </div>
+
+      <div id="sidebarLeft">
+        <!-- Empty -->
+      </div>
+
+      <div id="content">
+        <div class="content">
+          
+
+
+
+
+
+
+   <div class="post-entry">
+   <h1><a href="/2021/09/24/on-the-significant-properties-of-spreadsheets">On The Significant Properties of Spreadsheets</a></h1>
+   <div class="date">
+    <span>24 September 2021</span>
+   </div>
+   <!-- This creates excerpt based on user-defined separator (which needs to be inserted in each post! -->
+   <figure class="image">
+  <img src="/images/2021/09/clippy-800.png" alt="Clippy saying It looks like you're migrating a spreadsheet to ... TIFF?!" />
+</figure>
+
+<p>Earlier this month saw the publication of <a href="https://zenodo.org/record/5468116">The Significant Properties of Spreadsheets</a>. This is the final report of a six-year research effort by the Open Preservation Foundation’s Archives Interest Group (AIG), which is composed of participants from the National Archives of the Netherlands (NANETH), the National Archives of Estonia (NAE), the Danish National Archives (DNA), and Preservica. The report caught my attention for two reasons. First, there’s the subject matter of spreadsheets, on which I’ve written a few posts in the past<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>. Second, it marks a surprising (at least to me!) return of “significant properties”, a concept that was omnipresent in the digital preservation world between, roughly, 2005 and 2010, but which has largely fallen into disuse since then. In this post I’m sharing some of my thoughts on the report.</p>
+
+
+   <div class="buttonArea">
+   <a href="/2021/09/24/on-the-significant-properties-of-spreadsheets" class="button">Read more ...</a>
+  </div>
+   
+   <ul class="tag_box inline">
+     
+     
+
+
+
+
+  
+    <li>
+      <details>
+      <summary>PDF</summary>
+      <ul>
+      
+        <li><a href="/2021/09/24/on-the-significant-properties-of-spreadsheets">On The Significant Properties of Spreadsheets</a></li>
+      
+        <li><a href="/2021/09/06/pdf-processing-and-analysis-with-open-source-tools">PDF processing and analysis with open-source tools</a></li>
+      
+        <li><a href="/2017/06/01/policy-based-assessment-with-verapdf-a-first-impression">Policy-based assessment with VeraPDF - a first impression</a></li>
+      
+        <li><a href="/2016/12/09/pdfa-as-a-preferred-sustainable-format-for-spreadsheets">PDF/A as a preferred, sustainable format for spreadsheets?</a></li>
+      
+        <li><a href="/2015/07/08/why-pdfa-validation-matters-part-2">Why PDF/A validation matters, even if you don't have PDF/A - Part 2</a></li>
+      
+        <li><a href="/2015/07/07/why-pdfa-validation-matters-even-if-you-dont-have-pdfa">Why PDF/A validation matters, even if you don't have PDF/A</a></li>
+      
+        <li><a href="/2014/08/27/when-not-migrate-pdf-pdfa">When (not) to migrate a PDF to PDF/A</a></li>
+      
+        <li><a href="/2014/01/27/identification-pdf-preservation-risks-analysis-govdocs-selected-corpus">Identification of PDF preservation risks&#58; analysis of Govdocs selected corpus</a></li>
+      
+        <li><a href="/2013/07/25/identification-pdf-preservation-risks-sequel">Identification of PDF preservation risks with Apache Preflight&#58; the sequel</a></li>
+      
+        <li><a href="/2013/01/09/what-do-we-mean-embedded-files-pdf">What do we mean by "embedded" files in PDF?</a></li>
+      
+        <li><a href="/2012/12/19/identification-pdf-preservation-risks-apache-preflight-first-impression">Identification of PDF preservation risks with Apache Preflight&#58; a first impression</a></li>
+      
+        <li><a href="/2012/07/26/pdf-inventory-long-term-preservation-risks">PDF – Inventory of long-term preservation risks</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>preservation-risks</summary>
+      <ul>
+      
+        <li><a href="/2021/09/24/on-the-significant-properties-of-spreadsheets">On The Significant Properties of Spreadsheets</a></li>
+      
+        <li><a href="/2021/09/06/pdf-processing-and-analysis-with-open-source-tools">PDF processing and analysis with open-source tools</a></li>
+      
+        <li><a href="/2020/04/30/iso-iec-ts-22424-standard-on-epub3-preservation">ISO/IEC TS 22424 standard on EPUB3 preservation</a></li>
+      
+        <li><a href="/2020/03/11/does-microsoft-onedrive-export-large-ZIP-files-that-are-corrupt">Does Microsoft OneDrive export large ZIP files that are corrupt?</a></li>
+      
+        <li><a href="/2015/07/08/why-pdfa-validation-matters-part-2">Why PDF/A validation matters, even if you don't have PDF/A - Part 2</a></li>
+      
+        <li><a href="/2015/07/07/why-pdfa-validation-matters-even-if-you-dont-have-pdfa">Why PDF/A validation matters, even if you don't have PDF/A</a></li>
+      
+        <li><a href="/2013/10/08/measuring-bigfoot">Measuring Bigfoot</a></li>
+      
+        <li><a href="/2013/09/30/assessing-file-format-risks-searching-bigfoot">Assessing file format risks&#58; searching for Bigfoot?</a></li>
+      
+        <li><a href="/2012/07/26/pdf-inventory-long-term-preservation-risks">PDF – Inventory of long-term preservation risks</a></li>
+      
+        <li><a href="/2012/06/18/epub-archival-preservation">EPUB for archival preservation</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>significant-properties</summary>
+      <ul>
+      
+        <li><a href="/2021/09/24/on-the-significant-properties-of-spreadsheets">On The Significant Properties of Spreadsheets</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>spreadsheets</summary>
+      <ul>
+      
+        <li><a href="/2021/09/24/on-the-significant-properties-of-spreadsheets">On The Significant Properties of Spreadsheets</a></li>
+      
+        <li><a href="/2016/12/09/pdfa-as-a-preferred-sustainable-format-for-spreadsheets">PDF/A as a preferred, sustainable format for spreadsheets?</a></li>
+      
+        <li><a href="/2014/10/29/quattro-pro-dos-obsolete-format-last">Quattro Pro for DOS&#58; an obsolete format at last?</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>TIFF</summary>
+      <ul>
+      
+        <li><a href="/2021/09/24/on-the-significant-properties-of-spreadsheets">On The Significant Properties of Spreadsheets</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+
+
+
+   </ul>
+  
+   </div>
+   <hr>
+
+   <div class="post-entry">
+   <h1><a href="/2021/09/06/pdf-processing-and-analysis-with-open-source-tools">PDF processing and analysis with open-source tools</a></h1>
+   <div class="date">
+    <span>06 September 2021</span>
+   </div>
+   <!-- This creates excerpt based on user-defined separator (which needs to be inserted in each post! -->
+   <figure class="image">
+  <img src="/images/2021/09/plumber-tools.jpg" alt="Plumbers Tool Box" />
+  <figcaption><a href="https://www.flickr.com/photos/130648318@N06/42662053232">Plumbers Tool Box</a> by <a href="https://www.flickr.com/photos/130648318@N06/">pszz</a> on Flickr. Used under <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC BY-NC-SA 2.0</a>.</figcaption>
+</figure>
+
+<p>Over the years, I’ve been using a variety of open-source software tools for solving all sorts of issues with PDF documents. This post is an attempt to (finally) bring together my go-to PDF analysis and processing tools and commands for a variety of common tasks in one single place. It is largely based on a multitude of scattered lists, cheat-sheets and working notes that I made earlier. Starting with a brief overview of some general-purpose PDF toolkits, I then move on to a discussion of the following specific tasks:</p>
+
+<ul>
+  <li>Validation and integrity testing</li>
+  <li>PDF/A and PDF/UA compliance testing</li>
+  <li>Document information and metadata extraction</li>
+  <li>Policy/profile compliance testing</li>
+  <li>Text extraction</li>
+  <li>Link extraction</li>
+  <li>Image extraction</li>
+  <li>Conversion to other (graphics) formats</li>
+  <li>Inspection of embedded image information</li>
+  <li>Conversion of multiple images to PDF</li>
+  <li>Cross-comparison of two PDFs</li>
+  <li>Corrupted PDF repair</li>
+  <li>File size reduction of PDF with hi-res graphics</li>
+  <li>Inspection of low-level PDF structure</li>
+  <li>View, search and extract low-level PDF objects</li>
+</ul>
+
+
+   <div class="buttonArea">
+   <a href="/2021/09/06/pdf-processing-and-analysis-with-open-source-tools" class="button">Read more ...</a>
+  </div>
+   
+   <ul class="tag_box inline">
+     
+     
+
+
+
+
+  
+    <li>
+      <details>
+      <summary>Apache-Tika</summary>
+      <ul>
+      
+        <li><a href="/2021/09/06/pdf-processing-and-analysis-with-open-source-tools">PDF processing and analysis with open-source tools</a></li>
+      
+        <li><a href="/2021/02/24/towards-a-preservation-workflow-for-mobile-apps">Towards a preservation workflow for mobile apps</a></li>
+      
+        <li><a href="/2015/04/29/top-50-file-formats-in-the-kb-e-depot">Top 50 file formats in the KB e-Depot</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>JHOVE</summary>
+      <ul>
+      
+        <li><a href="/2021/09/06/pdf-processing-and-analysis-with-open-source-tools">PDF processing and analysis with open-source tools</a></li>
+      
+        <li><a href="/2017/01/04/breaking-waves-and-some-flacs">Breaking WAVEs (and some FLACs too)</a></li>
+      
+        <li><a href="/2014/01/31/why-cant-we-have-digital-preservation-tools-just-work">Why can't we have digital preservation tools that just work?</a></li>
+      
+        <li><a href="/2011/09/01/simple-jp2-file-structure-checker">A simple JP2 file structure checker</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>PDF</summary>
+      <ul>
+      
+        <li><a href="/2021/09/24/on-the-significant-properties-of-spreadsheets">On The Significant Properties of Spreadsheets</a></li>
+      
+        <li><a href="/2021/09/06/pdf-processing-and-analysis-with-open-source-tools">PDF processing and analysis with open-source tools</a></li>
+      
+        <li><a href="/2017/06/01/policy-based-assessment-with-verapdf-a-first-impression">Policy-based assessment with VeraPDF - a first impression</a></li>
+      
+        <li><a href="/2016/12/09/pdfa-as-a-preferred-sustainable-format-for-spreadsheets">PDF/A as a preferred, sustainable format for spreadsheets?</a></li>
+      
+        <li><a href="/2015/07/08/why-pdfa-validation-matters-part-2">Why PDF/A validation matters, even if you don't have PDF/A - Part 2</a></li>
+      
+        <li><a href="/2015/07/07/why-pdfa-validation-matters-even-if-you-dont-have-pdfa">Why PDF/A validation matters, even if you don't have PDF/A</a></li>
+      
+        <li><a href="/2014/08/27/when-not-migrate-pdf-pdfa">When (not) to migrate a PDF to PDF/A</a></li>
+      
+        <li><a href="/2014/01/27/identification-pdf-preservation-risks-analysis-govdocs-selected-corpus">Identification of PDF preservation risks&#58; analysis of Govdocs selected corpus</a></li>
+      
+        <li><a href="/2013/07/25/identification-pdf-preservation-risks-sequel">Identification of PDF preservation risks with Apache Preflight&#58; the sequel</a></li>
+      
+        <li><a href="/2013/01/09/what-do-we-mean-embedded-files-pdf">What do we mean by "embedded" files in PDF?</a></li>
+      
+        <li><a href="/2012/12/19/identification-pdf-preservation-risks-apache-preflight-first-impression">Identification of PDF preservation risks with Apache Preflight&#58; a first impression</a></li>
+      
+        <li><a href="/2012/07/26/pdf-inventory-long-term-preservation-risks">PDF – Inventory of long-term preservation risks</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>preservation-risks</summary>
+      <ul>
+      
+        <li><a href="/2021/09/24/on-the-significant-properties-of-spreadsheets">On The Significant Properties of Spreadsheets</a></li>
+      
+        <li><a href="/2021/09/06/pdf-processing-and-analysis-with-open-source-tools">PDF processing and analysis with open-source tools</a></li>
+      
+        <li><a href="/2020/04/30/iso-iec-ts-22424-standard-on-epub3-preservation">ISO/IEC TS 22424 standard on EPUB3 preservation</a></li>
+      
+        <li><a href="/2020/03/11/does-microsoft-onedrive-export-large-ZIP-files-that-are-corrupt">Does Microsoft OneDrive export large ZIP files that are corrupt?</a></li>
+      
+        <li><a href="/2015/07/08/why-pdfa-validation-matters-part-2">Why PDF/A validation matters, even if you don't have PDF/A - Part 2</a></li>
+      
+        <li><a href="/2015/07/07/why-pdfa-validation-matters-even-if-you-dont-have-pdfa">Why PDF/A validation matters, even if you don't have PDF/A</a></li>
+      
+        <li><a href="/2013/10/08/measuring-bigfoot">Measuring Bigfoot</a></li>
+      
+        <li><a href="/2013/09/30/assessing-file-format-risks-searching-bigfoot">Assessing file format risks&#58; searching for Bigfoot?</a></li>
+      
+        <li><a href="/2012/07/26/pdf-inventory-long-term-preservation-risks">PDF – Inventory of long-term preservation risks</a></li>
+      
+        <li><a href="/2012/06/18/epub-archival-preservation">EPUB for archival preservation</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>VeraPDF</summary>
+      <ul>
+      
+        <li><a href="/2021/09/06/pdf-processing-and-analysis-with-open-source-tools">PDF processing and analysis with open-source tools</a></li>
+      
+        <li><a href="/2017/06/01/policy-based-assessment-with-verapdf-a-first-impression">Policy-based assessment with VeraPDF - a first impression</a></li>
+      
+        <li><a href="/2015/07/08/why-pdfa-validation-matters-part-2">Why PDF/A validation matters, even if you don't have PDF/A - Part 2</a></li>
+      
+        <li><a href="/2015/07/07/why-pdfa-validation-matters-even-if-you-dont-have-pdfa">Why PDF/A validation matters, even if you don't have PDF/A</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+
+
+
+   </ul>
+  
+   </div>
+   <hr>
+
+   <div class="post-entry">
+   <h1><a href="/2021/02/24/towards-a-preservation-workflow-for-mobile-apps">Towards a preservation workflow for mobile apps</a></h1>
+   <div class="date">
+    <span>24 February 2021</span>
+   </div>
+   <!-- This creates excerpt based on user-defined separator (which needs to be inserted in each post! -->
+   <figure class="image">
+  <img src="/images/2021/02/stewardess-phone.jpg" alt="Satellite image of Wadden Sea" />
+  <figcaption>Production photo from "2001: A Space Odyssey". ©Stanley Kubrick Archives/TASCHEN.</figcaption>
+</figure>
+
+<p>My <a href="/2021/02/09/four-android-emulators-two-apps">previous post</a> addressed the emulation of mobile Android apps. In this follow-up, I’ll explore some other aspects of mobile app preservation, with a focus on acquisition and ingest processes. The <a href="https://zenodo.org/record/3460450">2019 iPres paper on the Acquisition and Preservation of Mobile eBook Apps</a> by Maureen Pennock, Peter May and Michael Day again was the departure point. In its concluding section, they recommend:</p>
+
+<blockquote>
+  <p>In terms of target formats for acquisition, we reach the undeniable conclusion that acquisition of the app in its packaged form (either an IPA file or an APK file) is optimal for ensuring organisations at least acquire a complete published object for preservation.</p>
+</blockquote>
+
+<p>And:</p>
+
+<blockquote>
+  <p>[T]his form should at least also include sufficient metadata about inherent technical dependencies to understand what is needed to meet them.</p>
+</blockquote>
+
+<p>In practical terms, this means that the workflows that are used for acquisition and (pre-)ingest must include components that are able to deal with the following aspects:</p>
+
+<ol>
+  <li>Acquisition of the app packages (either by direct deposit from the publisher, or using the app store).</li>
+  <li>Identification of the package format (APK for Android, IPA for iOS).</li>
+  <li>Identification of metadata about the app’s technical dependencies.</li>
+</ol>
+
+<p>The main objective of this post is to get an idea of what would be needed to implement these components. Is it possible to do all of this with existing tools? If not so, what are the gaps? The underlying assumption here is an emulation-based preservation strategy<sup id="fnref:14" role="doc-noteref"><a href="#fn:14" class="footnote" rel="footnote">1</a></sup>.</p>
+
+
+   <div class="buttonArea">
+   <a href="/2021/02/24/towards-a-preservation-workflow-for-mobile-apps" class="button">Read more ...</a>
+  </div>
+   
+   <ul class="tag_box inline">
+     
+     
+
+
+
+
+  
+    <li>
+      <details>
+      <summary>Android</summary>
+      <ul>
+      
+        <li><a href="/2021/02/24/towards-a-preservation-workflow-for-mobile-apps">Towards a preservation workflow for mobile apps</a></li>
+      
+        <li><a href="/2021/02/09/four-android-emulators-two-apps">Four Android emulators, two apps</a></li>
+      
+        <li><a href="/2014/10/23/running-archived-android-apps-pc-first-impressions">Running archived Android apps on a PC&#58; first impressions</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>Apache-Tika</summary>
+      <ul>
+      
+        <li><a href="/2021/09/06/pdf-processing-and-analysis-with-open-source-tools">PDF processing and analysis with open-source tools</a></li>
+      
+        <li><a href="/2021/02/24/towards-a-preservation-workflow-for-mobile-apps">Towards a preservation workflow for mobile apps</a></li>
+      
+        <li><a href="/2015/04/29/top-50-file-formats-in-the-kb-e-depot">Top 50 file formats in the KB e-Depot</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>APK</summary>
+      <ul>
+      
+        <li><a href="/2021/02/24/towards-a-preservation-workflow-for-mobile-apps">Towards a preservation workflow for mobile apps</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>format-identification</summary>
+      <ul>
+      
+        <li><a href="/2021/02/24/towards-a-preservation-workflow-for-mobile-apps">Towards a preservation workflow for mobile apps</a></li>
+      
+        <li><a href="/2015/04/29/top-50-file-formats-in-the-kb-e-depot">Top 50 file formats in the KB e-Depot</a></li>
+      
+        <li><a href="/2012/08/09/magic-editing-and-creation-primer">Magic editing and creation&#58; a primer</a></li>
+      
+        <li><a href="/2011/09/21/evaluation-identification-tools-first-results-scape">Evaluation of identification tools&#58; first results from SCAPE</a></li>
+      
+        <li><a href="/2011/07/11/improved-identification-xml-python-experiment">Improved identification of XML&#58; a Python experiment</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>iOS</summary>
+      <ul>
+      
+        <li><a href="/2021/02/24/towards-a-preservation-workflow-for-mobile-apps">Towards a preservation workflow for mobile apps</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>IPA</summary>
+      <ul>
+      
+        <li><a href="/2021/02/24/towards-a-preservation-workflow-for-mobile-apps">Towards a preservation workflow for mobile apps</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>Siegfried</summary>
+      <ul>
+      
+        <li><a href="/2021/02/24/towards-a-preservation-workflow-for-mobile-apps">Towards a preservation workflow for mobile apps</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>unix-file</summary>
+      <ul>
+      
+        <li><a href="/2021/02/24/towards-a-preservation-workflow-for-mobile-apps">Towards a preservation workflow for mobile apps</a></li>
+      
+        <li><a href="/2012/08/09/magic-editing-and-creation-primer">Magic editing and creation&#58; a primer</a></li>
+      
+        <li><a href="/2011/09/21/evaluation-identification-tools-first-results-scape">Evaluation of identification tools&#58; first results from SCAPE</a></li>
+      
+        <li><a href="/2011/07/11/improved-identification-xml-python-experiment">Improved identification of XML&#58; a Python experiment</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+
+
+
+   </ul>
+  
+   </div>
+   <hr>
+
+   <div class="post-entry">
+   <h1><a href="/2021/02/09/four-android-emulators-two-apps">Four Android emulators, two apps</a></h1>
+   <div class="date">
+    <span>09 February 2021</span>
+   </div>
+   <!-- This creates excerpt based on user-defined separator (which needs to be inserted in each post! -->
+   <figure class="image">
+  <img src="/images/2021/02/android-header.png" alt="Header image" />
+  <figcaption><a href="https://commons.wikimedia.org/wiki/File:Android_robot.svg">"Android Robot"</a> by Google Inc., used under <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>, via Wikimedia Commons.</figcaption>
+</figure>
+
+<p>So far the KB hasn’t actively pursued the preservation of mobile apps. However, born-digital publications in app-only form have become increasingly common, as well as “hybrid” publications, with apps that are supplemental to traditional (paper) books. At the request of our Digital Preservation department, I’ve started some exploratory investigations into how to preserve mobile apps in the near future. The <a href="https://zenodo.org/record/3460450">2019 iPres paper on the Acquisition and Preservation of Mobile eBook Apps</a> by the British Library’s Maureen Pennock, Peter May and Michael Day provides an excellent starting point on the subject, and it highlights many of the challenges involved.</p>
+
+<p>Before we can start archiving mobile apps ourselves, some additional aspects need to be addressed in more detail. One of these is the question of how to ensure long-term access. <a href="https://en.wikipedia.org/wiki/Emulator">Emulation</a> is the obvious strategy here, but I couldn’t find much information on the emulation of mobile platforms within a digital preservation context. In this blog post I present the results of some simple experiments, where I tried to emulate two selected apps. The main objective here was to explore the current state of emulation of mobile devices, and to get an initial impression of the suitability of some existing emulation solutions for long-term access.</p>
+
+<p>For practical reasons I’ve limited myself to the Android platform<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>. Attentive readers may recall I <a href="/2014/10/23/running-archived-android-apps-pc-first-impressions">briefly touched on this subject back in 2014</a>. As much of the information in that blog post has now become outdated, this new post  presents a more up-to date investigation. I should probably mention here that I don’t own or use any Android device, or any other kind of smartphone or tablet for that matter<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>. This probably makes me the worst possible person to evaluate Android emulation, but who’s going to stop me trying anyway? No one, that’s who!</p>
+
+
+   <div class="buttonArea">
+   <a href="/2021/02/09/four-android-emulators-two-apps" class="button">Read more ...</a>
+  </div>
+   
+   <ul class="tag_box inline">
+     
+     
+
+
+
+
+  
+    <li>
+      <details>
+      <summary>Android</summary>
+      <ul>
+      
+        <li><a href="/2021/02/24/towards-a-preservation-workflow-for-mobile-apps">Towards a preservation workflow for mobile apps</a></li>
+      
+        <li><a href="/2021/02/09/four-android-emulators-two-apps">Four Android emulators, two apps</a></li>
+      
+        <li><a href="/2014/10/23/running-archived-android-apps-pc-first-impressions">Running archived Android apps on a PC&#58; first impressions</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>emulation</summary>
+      <ul>
+      
+        <li><a href="/2021/02/09/four-android-emulators-two-apps">Four Android emulators, two apps</a></li>
+      
+        <li><a href="/2014/10/23/running-archived-android-apps-pc-first-impressions">Running archived Android apps on a PC&#58; first impressions</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>virtualization</summary>
+      <ul>
+      
+        <li><a href="/2021/02/09/four-android-emulators-two-apps">Four Android emulators, two apps</a></li>
+      
+        <li><a href="/2014/10/23/running-archived-android-apps-pc-first-impressions">Running archived Android apps on a PC&#58; first impressions</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+
+
+
+   </ul>
+  
+   </div>
+   <hr>
+
+   <div class="post-entry">
+   <h1><a href="/2020/09/09/mapping-the-dutch-web-domain">Mapping the Dutch web domain</a></h1>
+   <div class="date">
+    <span>09 September 2020</span>
+   </div>
+   <!-- This creates excerpt based on user-defined separator (which needs to be inserted in each post! -->
+   <figure class="image">
+  <img src="/images/2020/09/wwwspace.png" alt="Satellite image of Wadden Sea" />
+  <figcaption><a href="https://commons.wikimedia.org/wiki/File:World_Wide_Web_-_Digital_Preservation.png">“World Wide Web - Digital Preservation”</a> by <a href="https://www.wikidata.org/wiki/Q55754361">Jørgen Stamp</a>, used under <a href="https://creativecommons.org/licenses/by/2.5/dk/deed.en">CC BY 2.5 DK</a>; <a href="https://commons.wikimedia.org/wiki/File:Wadden_Sea.jpg">“Wadden Sea”</a> by Envisat satellite, used under <a href="https://creativecommons.org/licenses/by-sa/3.0-igo">CC BY-SA 3.0-IGO</a>.</figcaption>
+</figure>
+
+<p>Earlier this year I wrote <a href="/2020/02/11/web-domain-geolocation-and-spatial-analysis">a blog post</a> about geo-locating web domains, and the subsequent analysis of the resulting data in <em>QGIS</em>. At the time, this work was meant as a proof of concept, and I had only tried it out on a small set of test data. We have now applied this methodology to the whole of the Dutch (<em>.nl</em>) web domain, and this follow-up post presents the results of this exercise.</p>
+
+
+   <div class="buttonArea">
+   <a href="/2020/09/09/mapping-the-dutch-web-domain" class="button">Read more ...</a>
+  </div>
+   
+   <ul class="tag_box inline">
+     
+     
+
+
+
+
+  
+    <li>
+      <details>
+      <summary>geodata</summary>
+      <ul>
+      
+        <li><a href="/2020/09/09/mapping-the-dutch-web-domain">Mapping the Dutch web domain</a></li>
+      
+        <li><a href="/2020/02/11/web-domain-geolocation-and-spatial-analysis">Web domain geolocation and spatial analysis with QGIS</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>web-archiving</summary>
+      <ul>
+      
+        <li><a href="/2020/09/09/mapping-the-dutch-web-domain">Mapping the Dutch web domain</a></li>
+      
+        <li><a href="/2020/06/30/restoring-liesbets-virtual-home">Restoring Liesbet's Virtual Home, a digital treasure from the early Dutch web</a></li>
+      
+        <li><a href="/2020/02/11/web-domain-geolocation-and-spatial-analysis">Web domain geolocation and spatial analysis with QGIS</a></li>
+      
+        <li><a href="/2019/12/13/how-to-save-web">Archiving web pages -</a></li>
+      
+        <li><a href="/2018/07/11/crawling-offline-web-content-the-nl-menu-case">Crawling offline web content&#58; the NL-menu case</a></li>
+      
+        <li><a href="/2018/04/24/resurrecting-the-first-dutch-web-index-nl-menu-revisited">Resurrecting the first Dutch web index&#58; NL-menu revisited</a></li>
+      
+        <li><a href="/2015/01/06/Dutch-newspaper-wipes-articles-Internet-Archive-rescue">Dutch newspaper wipes out articles citing fabricated sources - Internet Archive to the rescue!</a></li>
+      
+        <li><a href="/2014/12/28/Perdiep-Ramesar-Internet-Archive">Perdiep Ramesar in het Internet Archive</a></li>
+      
+        <li><a href="/2014/11/13/Demise-Of-Dutch-Blogosphere">Demise of the Dutch Blogosphere</a></li>
+      
+        <li><a href="/2014/08/02/How-to-save-a-web-page-to-the-Internet-Archive">How to save a web page to the Internet Archive</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+
+
+
+   </ul>
+  
+   </div>
+   <hr>
+
+
+<!-- Pagination links -->
+
+
+<div class="pagination">
+  
+    <a href="#" class="active">&laquo; Newer</a>
+  
+
+  
+    
+      <a href="#" class="active">1</a>
+    
+  
+    
+      <a href="/page2">2</a>
+    
+  
+    
+      <a href="/page3">3</a>
+    
+  
+    
+      <a href="/page4">4</a>
+    
+  
+    
+      <a href="/page5">5</a>
+    
+  
+    
+      <a href="/page6">6</a>
+    
+  
+    
+      <a href="/page7">7</a>
+    
+  
+    
+      <a href="/page8">8</a>
+    
+  
+    
+      <a href="/page9">9</a>
+    
+  
+    
+      <a href="/page10">10</a>
+    
+  
+    
+      <a href="/page11">11</a>
+    
+  
+    
+      <a href="/page12">12</a>
+    
+  
+    
+      <a href="/page13">13</a>
+    
+  
+
+  
+    <a href="/page2">Older &raquo;</a>
+  
+</div>
+
+<hr>
+
+ 
+
+
+        </div>
+      </div>
+
+      <div id="sidebarRight">
+
+      <div class="sidebarGroup">
+        <p><a href="/about.html"><img src="/images/bgava.png" alt="bitsgalore avatar"  width="159" height="200"></a></p>
+        <h3><a href="/about.html">About</a></h3>
+      </div>
+
+      <div class="sidebarGroup">
+        <!-- Site search using DuckDuckGo -->
+        <h2>Search</h2>
+        <form method="get" action="https://duckduckgo.com/">
+          <input type="hidden" value="https://www.bitsgalore.org/" name="sites"></input>
+          <input size="40" placeholder="Search (DuckDuckGo)" name="q">
+          <input type="submit" value="&#x1F50D;">
+        </form>
+      </div>
+
+	    <div class="sidebarGroup">
+	      <!-- Tag cloud -->
+          <h2>Tags</h2>
+
+          
+
+          <ul class="tag_box inline">
+            
+            
+            
+
+
+
+
+  
+    <li>
+      <details>
+      <summary>Android</summary>
+      <ul>
+      
+        <li><a href="/2021/02/24/towards-a-preservation-workflow-for-mobile-apps">Towards a preservation workflow for mobile apps</a></li>
+      
+        <li><a href="/2021/02/09/four-android-emulators-two-apps">Four Android emulators, two apps</a></li>
+      
+        <li><a href="/2014/10/23/running-archived-android-apps-pc-first-impressions">Running archived Android apps on a PC&#58; first impressions</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>Apache-Preflight</summary>
+      <ul>
+      
+        <li><a href="/2015/07/08/why-pdfa-validation-matters-part-2">Why PDF/A validation matters, even if you don't have PDF/A - Part 2</a></li>
+      
+        <li><a href="/2014/01/27/identification-pdf-preservation-risks-analysis-govdocs-selected-corpus">Identification of PDF preservation risks&#58; analysis of Govdocs selected corpus</a></li>
+      
+        <li><a href="/2013/07/25/identification-pdf-preservation-risks-sequel">Identification of PDF preservation risks with Apache Preflight&#58; the sequel</a></li>
+      
+        <li><a href="/2012/12/19/identification-pdf-preservation-risks-apache-preflight-first-impression">Identification of PDF preservation risks with Apache Preflight&#58; a first impression</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>Apache-Tika</summary>
+      <ul>
+      
+        <li><a href="/2021/09/06/pdf-processing-and-analysis-with-open-source-tools">PDF processing and analysis with open-source tools</a></li>
+      
+        <li><a href="/2021/02/24/towards-a-preservation-workflow-for-mobile-apps">Towards a preservation workflow for mobile apps</a></li>
+      
+        <li><a href="/2015/04/29/top-50-file-formats-in-the-kb-e-depot">Top 50 file formats in the KB e-Depot</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>APK</summary>
+      <ul>
+      
+        <li><a href="/2021/02/24/towards-a-preservation-workflow-for-mobile-apps">Towards a preservation workflow for mobile apps</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>Debian</summary>
+      <ul>
+      
+        <li><a href="/2013/04/23/adventures-debian-packaging">Adventures in Debian packaging</a></li>
+      
+        <li><a href="/2012/04/23/update-jpylyzer">Update on jpylyzer</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>disk-imaging</summary>
+      <ul>
+      
+        <li><a href="/2019/04/10/a-simple-disk-imaging-workflow-tool">A simple disk imaging workflow tool</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>diskimgr</summary>
+      <ul>
+      
+        <li><a href="/2019/04/10/a-simple-disk-imaging-workflow-tool">A simple disk imaging workflow tool</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>DROID</summary>
+      <ul>
+      
+        <li><a href="/2014/01/31/why-cant-we-have-digital-preservation-tools-just-work">Why can't we have digital preservation tools that just work?</a></li>
+      
+        <li><a href="/2011/09/21/evaluation-identification-tools-first-results-scape">Evaluation of identification tools&#58; first results from SCAPE</a></li>
+      
+        <li><a href="/2011/07/11/improved-identification-xml-python-experiment">Improved identification of XML&#58; a Python experiment</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>e-depot</summary>
+      <ul>
+      
+        <li><a href="/2015/04/29/top-50-file-formats-in-the-kb-e-depot">Top 50 file formats in the KB e-Depot</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>emulation</summary>
+      <ul>
+      
+        <li><a href="/2021/02/09/four-android-emulators-two-apps">Four Android emulators, two apps</a></li>
+      
+        <li><a href="/2014/10/23/running-archived-android-apps-pc-first-impressions">Running archived Android apps on a PC&#58; first impressions</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>EPUB</summary>
+      <ul>
+      
+        <li><a href="/2020/04/30/iso-iec-ts-22424-standard-on-epub3-preservation">ISO/IEC TS 22424 standard on EPUB3 preservation</a></li>
+      
+        <li><a href="/2016/04/04/valid-but-not-accessible-epub-crazy-fixed-layouts">Valid, but not accessible&#58; crazy fixed EPUB layouts</a></li>
+      
+        <li><a href="/2016/03/10/the-future-of-epub-a-first-look-at-the-epub-3-1-editors-draft">The future of EPUB? A first look at the EPUB 3.1 Editor’s draft</a></li>
+      
+        <li><a href="/2015/03/13/policy-based-assessment-of-epub-with-epubcheck">Policy-based assessment of EPUB with Epubcheck</a></li>
+      
+        <li><a href="/2013/05/23/epub-archival-preservation-update">EPUB for archival preservation&#58; an update</a></li>
+      
+        <li><a href="/2012/06/18/epub-archival-preservation">EPUB for archival preservation</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>EPUBCheck</summary>
+      <ul>
+      
+        <li><a href="/2015/03/13/policy-based-assessment-of-epub-with-epubcheck">Policy-based assessment of EPUB with Epubcheck</a></li>
+      
+        <li><a href="/2013/05/23/epub-archival-preservation-update">EPUB for archival preservation&#58; an update</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>Fido</summary>
+      <ul>
+      
+        <li><a href="/2014/01/31/why-cant-we-have-digital-preservation-tools-just-work">Why can't we have digital preservation tools that just work?</a></li>
+      
+        <li><a href="/2011/09/21/evaluation-identification-tools-first-results-scape">Evaluation of identification tools&#58; first results from SCAPE</a></li>
+      
+        <li><a href="/2011/07/11/improved-identification-xml-python-experiment">Improved identification of XML&#58; a Python experiment</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>FITS</summary>
+      <ul>
+      
+        <li><a href="/2014/01/31/why-cant-we-have-digital-preservation-tools-just-work">Why can't we have digital preservation tools that just work?</a></li>
+      
+        <li><a href="/2011/09/21/evaluation-identification-tools-first-results-scape">Evaluation of identification tools&#58; first results from SCAPE</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>FLAC</summary>
+      <ul>
+      
+        <li><a href="/2017/01/04/breaking-waves-and-some-flacs">Breaking WAVEs (and some FLACs too)</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>floppy-disks</summary>
+      <ul>
+      
+        <li><a href="/2020/02/20/offline-digital-carriers-kb-deposit-collection">Offline digital data carriers in the KB deposit collection</a></li>
+      
+        <li><a href="/2019/04/10/a-simple-disk-imaging-workflow-tool">A simple disk imaging workflow tool</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>format-identification</summary>
+      <ul>
+      
+        <li><a href="/2021/02/24/towards-a-preservation-workflow-for-mobile-apps">Towards a preservation workflow for mobile apps</a></li>
+      
+        <li><a href="/2015/04/29/top-50-file-formats-in-the-kb-e-depot">Top 50 file formats in the KB e-Depot</a></li>
+      
+        <li><a href="/2012/08/09/magic-editing-and-creation-primer">Magic editing and creation&#58; a primer</a></li>
+      
+        <li><a href="/2011/09/21/evaluation-identification-tools-first-results-scape">Evaluation of identification tools&#58; first results from SCAPE</a></li>
+      
+        <li><a href="/2011/07/11/improved-identification-xml-python-experiment">Improved identification of XML&#58; a Python experiment</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>geodata</summary>
+      <ul>
+      
+        <li><a href="/2020/09/09/mapping-the-dutch-web-domain">Mapping the Dutch web domain</a></li>
+      
+        <li><a href="/2020/02/11/web-domain-geolocation-and-spatial-analysis">Web domain geolocation and spatial analysis with QGIS</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>GW-BASIC</summary>
+      <ul>
+      
+        <li><a href="/2011/12/14/prototype-jp2-validator-and-properties-extractor">A prototype JP2 validator and properties extractor</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>HFS</summary>
+      <ul>
+      
+        <li><a href="/2017/07/12/update-on-isolyzer-udf-hfs-and-more">Update on Isolyzer&#58; UDF, HFS+ and more!</a></li>
+      
+        <li><a href="/2017/04/25/imaging-cd-extra-blue-book-discs">Imaging CD-Extra / Blue Book discs</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>iOS</summary>
+      <ul>
+      
+        <li><a href="/2021/02/24/towards-a-preservation-workflow-for-mobile-apps">Towards a preservation workflow for mobile apps</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>IPA</summary>
+      <ul>
+      
+        <li><a href="/2021/02/24/towards-a-preservation-workflow-for-mobile-apps">Towards a preservation workflow for mobile apps</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>iromlab</summary>
+      <ul>
+      
+        <li><a href="/2017/06/19/image-and-rip-optical-media-like-a-boss">Image and Rip Optical Media Like A Boss!</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>ISO-9660</summary>
+      <ul>
+      
+        <li><a href="/2017/07/12/update-on-isolyzer-udf-hfs-and-more">Update on Isolyzer&#58; UDF, HFS+ and more!</a></li>
+      
+        <li><a href="/2017/04/25/imaging-cd-extra-blue-book-discs">Imaging CD-Extra / Blue Book discs</a></li>
+      
+        <li><a href="/2017/01/13/detecting-broken-iso-images-introducing-isolyzer">Detecting broken ISO images&#58; introducing Isolyzer</a></li>
+      
+        <li><a href="/2015/11/13/preserving-optical-media-from-the-command-line">Preserving optical media from the command-line</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>isolyzer</summary>
+      <ul>
+      
+        <li><a href="/2019/03/22/a-simple-workflow-tool-for-imaging-optical-media-using-readom-and-ddrescue">A simple workflow tool for imaging optical media using readom and ddrescue</a></li>
+      
+        <li><a href="/2017/07/12/update-on-isolyzer-udf-hfs-and-more">Update on Isolyzer&#58; UDF, HFS+ and more!</a></li>
+      
+        <li><a href="/2017/04/25/imaging-cd-extra-blue-book-discs">Imaging CD-Extra / Blue Book discs</a></li>
+      
+        <li><a href="/2017/01/13/detecting-broken-iso-images-introducing-isolyzer">Detecting broken ISO images&#58; introducing Isolyzer</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>JHOVE</summary>
+      <ul>
+      
+        <li><a href="/2021/09/06/pdf-processing-and-analysis-with-open-source-tools">PDF processing and analysis with open-source tools</a></li>
+      
+        <li><a href="/2017/01/04/breaking-waves-and-some-flacs">Breaking WAVEs (and some FLACs too)</a></li>
+      
+        <li><a href="/2014/01/31/why-cant-we-have-digital-preservation-tools-just-work">Why can't we have digital preservation tools that just work?</a></li>
+      
+        <li><a href="/2011/09/01/simple-jp2-file-structure-checker">A simple JP2 file structure checker</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>JHOVE2</summary>
+      <ul>
+      
+        <li><a href="/2014/01/31/why-cant-we-have-digital-preservation-tools-just-work">Why can't we have digital preservation tools that just work?</a></li>
+      
+        <li><a href="/2011/09/21/evaluation-identification-tools-first-results-scape">Evaluation of identification tools&#58; first results from SCAPE</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>JP2</summary>
+      <ul>
+      
+        <li><a href="/2015/12/08/jpylyzer-2015-round-up">Jpylyzer 2015 round-up</a></li>
+      
+        <li><a href="/2015/10/19/Response-to-report-on-JPEG-2000-expert-round-table">Response to report on JPEG 2000 expert round table</a></li>
+      
+        <li><a href="/2014/09/26/six-ways-decode-lossy-jp2">Six ways to decode a lossy JP2</a></li>
+      
+        <li><a href="/2014/09/11/jpylyzer-software-finalist-voor-digitale-duurzaamheidsprijs">Jpylyzer software finalist voor digitale duurzaamheidsprijs</a></li>
+      
+        <li><a href="/2013/08/19/optimising-archival-jp2s-derivation-access-copies">Optimising archival JP2s for the derivation of access copies</a></li>
+      
+        <li><a href="/2013/07/01/icc-profiles-and-resolution-jp2-update-2011-d-lib-paper">ICC profiles and resolution in JP2&#58; update on 2011 D-Lib paper</a></li>
+      
+        <li><a href="/2012/09/04/automated-assessment-jp2-against-technical-profile">Automated assessment of JP2 against a technical profile</a></li>
+      
+        <li><a href="/2012/04/23/update-jpylyzer">Update on jpylyzer</a></li>
+      
+        <li><a href="/2012/01/10/jpylyzer-documentation">Jpylyzer documentation</a></li>
+      
+        <li><a href="/2011/12/14/prototype-jp2-validator-and-properties-extractor">A prototype JP2 validator and properties extractor</a></li>
+      
+        <li><a href="/2011/09/01/simple-jp2-file-structure-checker">A simple JP2 file structure checker</a></li>
+      
+        <li><a href="/2011/06/06/paper-jpeg-2000-preservation-9">Paper on JPEG 2000 for preservation</a></li>
+      
+        <li><a href="/2010/12/02/ensuring-suitability-of-jpeg">Ensuring the suitability of JPEG 2000 for preservation</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>jpeg-2000</summary>
+      <ul>
+      
+        <li><a href="/2015/12/08/jpylyzer-2015-round-up">Jpylyzer 2015 round-up</a></li>
+      
+        <li><a href="/2015/10/19/Response-to-report-on-JPEG-2000-expert-round-table">Response to report on JPEG 2000 expert round table</a></li>
+      
+        <li><a href="/2014/09/26/six-ways-decode-lossy-jp2">Six ways to decode a lossy JP2</a></li>
+      
+        <li><a href="/2014/09/11/jpylyzer-software-finalist-voor-digitale-duurzaamheidsprijs">Jpylyzer software finalist voor digitale duurzaamheidsprijs</a></li>
+      
+        <li><a href="/2013/08/19/optimising-archival-jp2s-derivation-access-copies">Optimising archival JP2s for the derivation of access copies</a></li>
+      
+        <li><a href="/2013/07/01/icc-profiles-and-resolution-jp2-update-2011-d-lib-paper">ICC profiles and resolution in JP2&#58; update on 2011 D-Lib paper</a></li>
+      
+        <li><a href="/2012/09/04/automated-assessment-jp2-against-technical-profile">Automated assessment of JP2 against a technical profile</a></li>
+      
+        <li><a href="/2012/04/23/update-jpylyzer">Update on jpylyzer</a></li>
+      
+        <li><a href="/2012/01/10/jpylyzer-documentation">Jpylyzer documentation</a></li>
+      
+        <li><a href="/2011/12/14/prototype-jp2-validator-and-properties-extractor">A prototype JP2 validator and properties extractor</a></li>
+      
+        <li><a href="/2011/09/01/simple-jp2-file-structure-checker">A simple JP2 file structure checker</a></li>
+      
+        <li><a href="/2011/06/06/paper-jpeg-2000-preservation-9">Paper on JPEG 2000 for preservation</a></li>
+      
+        <li><a href="/2010/12/02/ensuring-suitability-of-jpeg">Ensuring the suitability of JPEG 2000 for preservation</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>jpylyzer</summary>
+      <ul>
+      
+        <li><a href="/2015/12/08/jpylyzer-2015-round-up">Jpylyzer 2015 round-up</a></li>
+      
+        <li><a href="/2014/09/11/jpylyzer-software-finalist-voor-digitale-duurzaamheidsprijs">Jpylyzer software finalist voor digitale duurzaamheidsprijs</a></li>
+      
+        <li><a href="/2013/04/23/adventures-debian-packaging">Adventures in Debian packaging</a></li>
+      
+        <li><a href="/2012/09/04/automated-assessment-jp2-against-technical-profile">Automated assessment of JP2 against a technical profile</a></li>
+      
+        <li><a href="/2012/04/23/update-jpylyzer">Update on jpylyzer</a></li>
+      
+        <li><a href="/2012/01/10/jpylyzer-documentation">Jpylyzer documentation</a></li>
+      
+        <li><a href="/2011/12/14/prototype-jp2-validator-and-properties-extractor">A prototype JP2 validator and properties extractor</a></li>
+      
+        <li><a href="/2011/09/01/simple-jp2-file-structure-checker">A simple JP2 file structure checker</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>magic</summary>
+      <ul>
+      
+        <li><a href="/2012/08/09/magic-editing-and-creation-primer">Magic editing and creation&#58; a primer</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>Microsoft</summary>
+      <ul>
+      
+        <li><a href="/2020/03/11/does-microsoft-onedrive-export-large-ZIP-files-that-are-corrupt">Does Microsoft OneDrive export large ZIP files that are corrupt?</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>omimgr</summary>
+      <ul>
+      
+        <li><a href="/2019/03/22/a-simple-workflow-tool-for-imaging-optical-media-using-readom-and-ddrescue">A simple workflow tool for imaging optical media using readom and ddrescue</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>OneDrive</summary>
+      <ul>
+      
+        <li><a href="/2020/03/11/does-microsoft-onedrive-export-large-ZIP-files-that-are-corrupt">Does Microsoft OneDrive export large ZIP files that are corrupt?</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>optical-media</summary>
+      <ul>
+      
+        <li><a href="/2020/02/20/offline-digital-carriers-kb-deposit-collection">Offline digital data carriers in the KB deposit collection</a></li>
+      
+        <li><a href="/2019/03/22/a-simple-workflow-tool-for-imaging-optical-media-using-readom-and-ddrescue">A simple workflow tool for imaging optical media using readom and ddrescue</a></li>
+      
+        <li><a href="/2018/04/24/resurrecting-the-first-dutch-web-index-nl-menu-revisited">Resurrecting the first Dutch web index&#58; NL-menu revisited</a></li>
+      
+        <li><a href="/2017/07/12/update-on-isolyzer-udf-hfs-and-more">Update on Isolyzer&#58; UDF, HFS+ and more!</a></li>
+      
+        <li><a href="/2017/06/19/image-and-rip-optical-media-like-a-boss">Image and Rip Optical Media Like A Boss!</a></li>
+      
+        <li><a href="/2017/04/25/imaging-cd-extra-blue-book-discs">Imaging CD-Extra / Blue Book discs</a></li>
+      
+        <li><a href="/2017/01/13/detecting-broken-iso-images-introducing-isolyzer">Detecting broken ISO images&#58; introducing Isolyzer</a></li>
+      
+        <li><a href="/2017/01/04/breaking-waves-and-some-flacs">Breaking WAVEs (and some FLACs too)</a></li>
+      
+        <li><a href="/2015/11/13/preserving-optical-media-from-the-command-line">Preserving optical media from the command-line</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>packaging</summary>
+      <ul>
+      
+        <li><a href="/2013/04/23/adventures-debian-packaging">Adventures in Debian packaging</a></li>
+      
+        <li><a href="/2012/04/23/update-jpylyzer">Update on jpylyzer</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>PDF</summary>
+      <ul>
+      
+        <li><a href="/2021/09/24/on-the-significant-properties-of-spreadsheets">On The Significant Properties of Spreadsheets</a></li>
+      
+        <li><a href="/2021/09/06/pdf-processing-and-analysis-with-open-source-tools">PDF processing and analysis with open-source tools</a></li>
+      
+        <li><a href="/2017/06/01/policy-based-assessment-with-verapdf-a-first-impression">Policy-based assessment with VeraPDF - a first impression</a></li>
+      
+        <li><a href="/2016/12/09/pdfa-as-a-preferred-sustainable-format-for-spreadsheets">PDF/A as a preferred, sustainable format for spreadsheets?</a></li>
+      
+        <li><a href="/2015/07/08/why-pdfa-validation-matters-part-2">Why PDF/A validation matters, even if you don't have PDF/A - Part 2</a></li>
+      
+        <li><a href="/2015/07/07/why-pdfa-validation-matters-even-if-you-dont-have-pdfa">Why PDF/A validation matters, even if you don't have PDF/A</a></li>
+      
+        <li><a href="/2014/08/27/when-not-migrate-pdf-pdfa">When (not) to migrate a PDF to PDF/A</a></li>
+      
+        <li><a href="/2014/01/27/identification-pdf-preservation-risks-analysis-govdocs-selected-corpus">Identification of PDF preservation risks&#58; analysis of Govdocs selected corpus</a></li>
+      
+        <li><a href="/2013/07/25/identification-pdf-preservation-risks-sequel">Identification of PDF preservation risks with Apache Preflight&#58; the sequel</a></li>
+      
+        <li><a href="/2013/01/09/what-do-we-mean-embedded-files-pdf">What do we mean by "embedded" files in PDF?</a></li>
+      
+        <li><a href="/2012/12/19/identification-pdf-preservation-risks-apache-preflight-first-impression">Identification of PDF preservation risks with Apache Preflight&#58; a first impression</a></li>
+      
+        <li><a href="/2012/07/26/pdf-inventory-long-term-preservation-risks">PDF – Inventory of long-term preservation risks</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>preservation-risks</summary>
+      <ul>
+      
+        <li><a href="/2021/09/24/on-the-significant-properties-of-spreadsheets">On The Significant Properties of Spreadsheets</a></li>
+      
+        <li><a href="/2021/09/06/pdf-processing-and-analysis-with-open-source-tools">PDF processing and analysis with open-source tools</a></li>
+      
+        <li><a href="/2020/04/30/iso-iec-ts-22424-standard-on-epub3-preservation">ISO/IEC TS 22424 standard on EPUB3 preservation</a></li>
+      
+        <li><a href="/2020/03/11/does-microsoft-onedrive-export-large-ZIP-files-that-are-corrupt">Does Microsoft OneDrive export large ZIP files that are corrupt?</a></li>
+      
+        <li><a href="/2015/07/08/why-pdfa-validation-matters-part-2">Why PDF/A validation matters, even if you don't have PDF/A - Part 2</a></li>
+      
+        <li><a href="/2015/07/07/why-pdfa-validation-matters-even-if-you-dont-have-pdfa">Why PDF/A validation matters, even if you don't have PDF/A</a></li>
+      
+        <li><a href="/2013/10/08/measuring-bigfoot">Measuring Bigfoot</a></li>
+      
+        <li><a href="/2013/09/30/assessing-file-format-risks-searching-bigfoot">Assessing file format risks&#58; searching for Bigfoot?</a></li>
+      
+        <li><a href="/2012/07/26/pdf-inventory-long-term-preservation-risks">PDF – Inventory of long-term preservation risks</a></li>
+      
+        <li><a href="/2012/06/18/epub-archival-preservation">EPUB for archival preservation</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>Quattro-Pro</summary>
+      <ul>
+      
+        <li><a href="/2014/10/29/quattro-pro-dos-obsolete-format-last">Quattro Pro for DOS&#58; an obsolete format at last?</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>rant</summary>
+      <ul>
+      
+        <li><a href="/2014/01/31/why-cant-we-have-digital-preservation-tools-just-work">Why can't we have digital preservation tools that just work?</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>schematron</summary>
+      <ul>
+      
+        <li><a href="/2017/06/01/policy-based-assessment-with-verapdf-a-first-impression">Policy-based assessment with VeraPDF - a first impression</a></li>
+      
+        <li><a href="/2015/07/08/why-pdfa-validation-matters-part-2">Why PDF/A validation matters, even if you don't have PDF/A - Part 2</a></li>
+      
+        <li><a href="/2015/03/13/policy-based-assessment-of-epub-with-epubcheck">Policy-based assessment of EPUB with Epubcheck</a></li>
+      
+        <li><a href="/2012/09/04/automated-assessment-jp2-against-technical-profile">Automated assessment of JP2 against a technical profile</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>Siegfried</summary>
+      <ul>
+      
+        <li><a href="/2021/02/24/towards-a-preservation-workflow-for-mobile-apps">Towards a preservation workflow for mobile apps</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>significant-properties</summary>
+      <ul>
+      
+        <li><a href="/2021/09/24/on-the-significant-properties-of-spreadsheets">On The Significant Properties of Spreadsheets</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>spreadsheets</summary>
+      <ul>
+      
+        <li><a href="/2021/09/24/on-the-significant-properties-of-spreadsheets">On The Significant Properties of Spreadsheets</a></li>
+      
+        <li><a href="/2016/12/09/pdfa-as-a-preferred-sustainable-format-for-spreadsheets">PDF/A as a preferred, sustainable format for spreadsheets?</a></li>
+      
+        <li><a href="/2014/10/29/quattro-pro-dos-obsolete-format-last">Quattro Pro for DOS&#58; an obsolete format at last?</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>tapeimgr</summary>
+      <ul>
+      
+        <li><a href="/2019/09/09/recovering-90s-data-tapes-experiences-kb-web-archaeology">Recovering '90s Data Tapes - Experiences From the KB Web Archaeology project (iPres 2019 paper)</a></li>
+      
+        <li><a href="/2019/01/31/roll-the-tape-recovering-90s-data-tapes-in-bitcurator">Roll the tape - recovering '90s data tapes in BitCurator</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>tapes</summary>
+      <ul>
+      
+        <li><a href="/2020/02/20/offline-digital-carriers-kb-deposit-collection">Offline digital data carriers in the KB deposit collection</a></li>
+      
+        <li><a href="/2019/09/09/recovering-90s-data-tapes-experiences-kb-web-archaeology">Recovering '90s Data Tapes - Experiences From the KB Web Archaeology project (iPres 2019 paper)</a></li>
+      
+        <li><a href="/2019/01/31/roll-the-tape-recovering-90s-data-tapes-in-bitcurator">Roll the tape - recovering '90s data tapes in BitCurator</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>TIFF</summary>
+      <ul>
+      
+        <li><a href="/2021/09/24/on-the-significant-properties-of-spreadsheets">On The Significant Properties of Spreadsheets</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>UDF</summary>
+      <ul>
+      
+        <li><a href="/2017/07/12/update-on-isolyzer-udf-hfs-and-more">Update on Isolyzer&#58; UDF, HFS+ and more!</a></li>
+      
+        <li><a href="/2017/04/25/imaging-cd-extra-blue-book-discs">Imaging CD-Extra / Blue Book discs</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>unix-file</summary>
+      <ul>
+      
+        <li><a href="/2021/02/24/towards-a-preservation-workflow-for-mobile-apps">Towards a preservation workflow for mobile apps</a></li>
+      
+        <li><a href="/2012/08/09/magic-editing-and-creation-primer">Magic editing and creation&#58; a primer</a></li>
+      
+        <li><a href="/2011/09/21/evaluation-identification-tools-first-results-scape">Evaluation of identification tools&#58; first results from SCAPE</a></li>
+      
+        <li><a href="/2011/07/11/improved-identification-xml-python-experiment">Improved identification of XML&#58; a Python experiment</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>VeraPDF</summary>
+      <ul>
+      
+        <li><a href="/2021/09/06/pdf-processing-and-analysis-with-open-source-tools">PDF processing and analysis with open-source tools</a></li>
+      
+        <li><a href="/2017/06/01/policy-based-assessment-with-verapdf-a-first-impression">Policy-based assessment with VeraPDF - a first impression</a></li>
+      
+        <li><a href="/2015/07/08/why-pdfa-validation-matters-part-2">Why PDF/A validation matters, even if you don't have PDF/A - Part 2</a></li>
+      
+        <li><a href="/2015/07/07/why-pdfa-validation-matters-even-if-you-dont-have-pdfa">Why PDF/A validation matters, even if you don't have PDF/A</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>virtualization</summary>
+      <ul>
+      
+        <li><a href="/2021/02/09/four-android-emulators-two-apps">Four Android emulators, two apps</a></li>
+      
+        <li><a href="/2014/10/23/running-archived-android-apps-pc-first-impressions">Running archived Android apps on a PC&#58; first impressions</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>WAVE</summary>
+      <ul>
+      
+        <li><a href="/2017/01/04/breaking-waves-and-some-flacs">Breaking WAVEs (and some FLACs too)</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>web-archaeology</summary>
+      <ul>
+      
+        <li><a href="/2020/06/30/restoring-liesbets-virtual-home">Restoring Liesbet's Virtual Home, a digital treasure from the early Dutch web</a></li>
+      
+        <li><a href="/2019/09/09/recovering-90s-data-tapes-experiences-kb-web-archaeology">Recovering '90s Data Tapes - Experiences From the KB Web Archaeology project (iPres 2019 paper)</a></li>
+      
+        <li><a href="/2019/04/10/a-simple-disk-imaging-workflow-tool">A simple disk imaging workflow tool</a></li>
+      
+        <li><a href="/2019/01/31/roll-the-tape-recovering-90s-data-tapes-in-bitcurator">Roll the tape - recovering '90s data tapes in BitCurator</a></li>
+      
+        <li><a href="/2018/07/11/crawling-offline-web-content-the-nl-menu-case">Crawling offline web content&#58; the NL-menu case</a></li>
+      
+        <li><a href="/2018/04/24/resurrecting-the-first-dutch-web-index-nl-menu-revisited">Resurrecting the first Dutch web index&#58; NL-menu revisited</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>web-archiving</summary>
+      <ul>
+      
+        <li><a href="/2020/09/09/mapping-the-dutch-web-domain">Mapping the Dutch web domain</a></li>
+      
+        <li><a href="/2020/06/30/restoring-liesbets-virtual-home">Restoring Liesbet's Virtual Home, a digital treasure from the early Dutch web</a></li>
+      
+        <li><a href="/2020/02/11/web-domain-geolocation-and-spatial-analysis">Web domain geolocation and spatial analysis with QGIS</a></li>
+      
+        <li><a href="/2019/12/13/how-to-save-web">Archiving web pages -</a></li>
+      
+        <li><a href="/2018/07/11/crawling-offline-web-content-the-nl-menu-case">Crawling offline web content&#58; the NL-menu case</a></li>
+      
+        <li><a href="/2018/04/24/resurrecting-the-first-dutch-web-index-nl-menu-revisited">Resurrecting the first Dutch web index&#58; NL-menu revisited</a></li>
+      
+        <li><a href="/2015/01/06/Dutch-newspaper-wipes-articles-Internet-Archive-rescue">Dutch newspaper wipes out articles citing fabricated sources - Internet Archive to the rescue!</a></li>
+      
+        <li><a href="/2014/12/28/Perdiep-Ramesar-Internet-Archive">Perdiep Ramesar in het Internet Archive</a></li>
+      
+        <li><a href="/2014/11/13/Demise-Of-Dutch-Blogosphere">Demise of the Dutch Blogosphere</a></li>
+      
+        <li><a href="/2014/08/02/How-to-save-a-web-page-to-the-Internet-Archive">How to save a web page to the Internet Archive</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>XS4ALL</summary>
+      <ul>
+      
+        <li><a href="/2020/06/30/restoring-liesbets-virtual-home">Restoring Liesbet's Virtual Home, a digital treasure from the early Dutch web</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+    <li>
+      <details>
+      <summary>ZIP</summary>
+      <ul>
+      
+        <li><a href="/2020/03/11/does-microsoft-onedrive-export-large-ZIP-files-that-are-corrupt">Does Microsoft OneDrive export large ZIP files that are corrupt?</a></li>
+      
+      </ul>
+      </details>
+    </li>
+  
+
+
+
+          </ul>
+      </div>
+
+      <div class="sidebarGroup">
+       <!-- Archive -->
+        <h2>Archive</h2>
+
+        
+          <div class="archive">
+            
+
+
+  
+    
+    
+    
+    
+  
+    
+      <details open="true">
+      <summary>2021</summary>
+      <h3>September</h3>
+      <ul>
+    
+  
+	<li><a href="/2021/09/24/on-the-significant-properties-of-spreadsheets">On The Significant Properties of Spreadsheets</a></li>
+	
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2021/09/06/pdf-processing-and-analysis-with-open-source-tools">PDF processing and analysis with open-source tools</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>February</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2021/02/24/towards-a-preservation-workflow-for-mobile-apps">Towards a preservation workflow for mobile apps</a></li>
+	
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2021/02/09/four-android-emulators-two-apps">Four Android emulators, two apps</a></li>
+	
+    
+      
+        </ul>
+        </details>
+        <details>
+        <summary>2020</summary>
+        <h3>September</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2020/09/09/mapping-the-dutch-web-domain">Mapping the Dutch web domain</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>June</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2020/06/30/restoring-liesbets-virtual-home">Restoring Liesbet's Virtual Home, a digital treasure from the early Dutch web</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>April</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2020/04/30/iso-iec-ts-22424-standard-on-epub3-preservation">ISO/IEC TS 22424 standard on EPUB3 preservation</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>March</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2020/03/11/does-microsoft-onedrive-export-large-ZIP-files-that-are-corrupt">Does Microsoft OneDrive export large ZIP files that are corrupt?</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>February</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2020/02/20/offline-digital-carriers-kb-deposit-collection">Offline digital data carriers in the KB deposit collection</a></li>
+	
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2020/02/11/web-domain-geolocation-and-spatial-analysis">Web domain geolocation and spatial analysis with QGIS</a></li>
+	
+    
+      
+        </ul>
+        </details>
+        <details>
+        <summary>2019</summary>
+        <h3>December</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2019/12/13/how-to-save-web">Archiving web pages -</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>September</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2019/09/09/recovering-90s-data-tapes-experiences-kb-web-archaeology">Recovering '90s Data Tapes - Experiences From the KB Web Archaeology project (iPres 2019 paper)</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>April</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2019/04/10/a-simple-disk-imaging-workflow-tool">A simple disk imaging workflow tool</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>March</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2019/03/22/a-simple-workflow-tool-for-imaging-optical-media-using-readom-and-ddrescue">A simple workflow tool for imaging optical media using readom and ddrescue</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>January</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2019/01/31/roll-the-tape-recovering-90s-data-tapes-in-bitcurator">Roll the tape - recovering '90s data tapes in BitCurator</a></li>
+	
+    
+      
+        </ul>
+        </details>
+        <details>
+        <summary>2018</summary>
+        <h3>July</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2018/07/11/crawling-offline-web-content-the-nl-menu-case">Crawling offline web content&#58; the NL-menu case</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>April</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2018/04/24/resurrecting-the-first-dutch-web-index-nl-menu-revisited">Resurrecting the first Dutch web index&#58; NL-menu revisited</a></li>
+	
+    
+      
+        </ul>
+        </details>
+        <details>
+        <summary>2017</summary>
+        <h3>July</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2017/07/12/update-on-isolyzer-udf-hfs-and-more">Update on Isolyzer&#58; UDF, HFS+ and more!</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>June</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2017/06/19/image-and-rip-optical-media-like-a-boss">Image and Rip Optical Media Like A Boss!</a></li>
+	
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2017/06/01/policy-based-assessment-with-verapdf-a-first-impression">Policy-based assessment with VeraPDF - a first impression</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>April</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2017/04/25/imaging-cd-extra-blue-book-discs">Imaging CD-Extra / Blue Book discs</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>January</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2017/01/13/detecting-broken-iso-images-introducing-isolyzer">Detecting broken ISO images&#58; introducing Isolyzer</a></li>
+	
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2017/01/04/breaking-waves-and-some-flacs">Breaking WAVEs (and some FLACs too)</a></li>
+	
+    
+      
+        </ul>
+        </details>
+        <details>
+        <summary>2016</summary>
+        <h3>December</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2016/12/09/pdfa-as-a-preferred-sustainable-format-for-spreadsheets">PDF/A as a preferred, sustainable format for spreadsheets?</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>April</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2016/04/04/valid-but-not-accessible-epub-crazy-fixed-layouts">Valid, but not accessible&#58; crazy fixed EPUB layouts</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>March</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2016/03/10/the-future-of-epub-a-first-look-at-the-epub-3-1-editors-draft">The future of EPUB? A first look at the EPUB 3.1 Editor’s draft</a></li>
+	
+    
+      
+        </ul>
+        </details>
+        <details>
+        <summary>2015</summary>
+        <h3>December</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2015/12/08/jpylyzer-2015-round-up">Jpylyzer 2015 round-up</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>November</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2015/11/13/preserving-optical-media-from-the-command-line">Preserving optical media from the command-line</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>October</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2015/10/19/Response-to-report-on-JPEG-2000-expert-round-table">Response to report on JPEG 2000 expert round table</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>July</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2015/07/08/why-pdfa-validation-matters-part-2">Why PDF/A validation matters, even if you don't have PDF/A - Part 2</a></li>
+	
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2015/07/07/why-pdfa-validation-matters-even-if-you-dont-have-pdfa">Why PDF/A validation matters, even if you don't have PDF/A</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>April</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2015/04/29/top-50-file-formats-in-the-kb-e-depot">Top 50 file formats in the KB e-Depot</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>March</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2015/03/13/policy-based-assessment-of-epub-with-epubcheck">Policy-based assessment of EPUB with Epubcheck</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>January</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2015/01/06/Dutch-newspaper-wipes-articles-Internet-Archive-rescue">Dutch newspaper wipes out articles citing fabricated sources - Internet Archive to the rescue!</a></li>
+	
+    
+      
+        </ul>
+        </details>
+        <details>
+        <summary>2014</summary>
+        <h3>December</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2014/12/28/Perdiep-Ramesar-Internet-Archive">Perdiep Ramesar in het Internet Archive</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>November</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2014/11/13/Demise-Of-Dutch-Blogosphere">Demise of the Dutch Blogosphere</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>October</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2014/10/29/quattro-pro-dos-obsolete-format-last">Quattro Pro for DOS&#58; an obsolete format at last?</a></li>
+	
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2014/10/23/running-archived-android-apps-pc-first-impressions">Running archived Android apps on a PC&#58; first impressions</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>September</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2014/09/26/six-ways-decode-lossy-jp2">Six ways to decode a lossy JP2</a></li>
+	
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2014/09/11/jpylyzer-software-finalist-voor-digitale-duurzaamheidsprijs">Jpylyzer software finalist voor digitale duurzaamheidsprijs</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>August</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2014/08/27/when-not-migrate-pdf-pdfa">When (not) to migrate a PDF to PDF/A</a></li>
+	
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2014/08/02/How-to-save-a-web-page-to-the-Internet-Archive">How to save a web page to the Internet Archive</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>January</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2014/01/31/why-cant-we-have-digital-preservation-tools-just-work">Why can't we have digital preservation tools that just work?</a></li>
+	
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2014/01/27/identification-pdf-preservation-risks-analysis-govdocs-selected-corpus">Identification of PDF preservation risks&#58; analysis of Govdocs selected corpus</a></li>
+	
+    
+      
+        </ul>
+        </details>
+        <details>
+        <summary>2013</summary>
+        <h3>October</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2013/10/08/measuring-bigfoot">Measuring Bigfoot</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>September</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2013/09/30/assessing-file-format-risks-searching-bigfoot">Assessing file format risks&#58; searching for Bigfoot?</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>August</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2013/08/19/optimising-archival-jp2s-derivation-access-copies">Optimising archival JP2s for the derivation of access copies</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>July</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2013/07/25/identification-pdf-preservation-risks-sequel">Identification of PDF preservation risks with Apache Preflight&#58; the sequel</a></li>
+	
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2013/07/01/icc-profiles-and-resolution-jp2-update-2011-d-lib-paper">ICC profiles and resolution in JP2&#58; update on 2011 D-Lib paper</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>May</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2013/05/23/epub-archival-preservation-update">EPUB for archival preservation&#58; an update</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>April</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2013/04/23/adventures-debian-packaging">Adventures in Debian packaging</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>January</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2013/01/09/what-do-we-mean-embedded-files-pdf">What do we mean by "embedded" files in PDF?</a></li>
+	
+    
+      
+        </ul>
+        </details>
+        <details>
+        <summary>2012</summary>
+        <h3>December</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2012/12/19/identification-pdf-preservation-risks-apache-preflight-first-impression">Identification of PDF preservation risks with Apache Preflight&#58; a first impression</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>September</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2012/09/04/automated-assessment-jp2-against-technical-profile">Automated assessment of JP2 against a technical profile</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>August</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2012/08/09/magic-editing-and-creation-primer">Magic editing and creation&#58; a primer</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>July</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2012/07/26/pdf-inventory-long-term-preservation-risks">PDF – Inventory of long-term preservation risks</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>June</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2012/06/18/epub-archival-preservation">EPUB for archival preservation</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>April</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2012/04/23/update-jpylyzer">Update on jpylyzer</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>January</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2012/01/10/jpylyzer-documentation">Jpylyzer documentation</a></li>
+	
+    
+      
+        </ul>
+        </details>
+        <details>
+        <summary>2011</summary>
+        <h3>December</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2011/12/14/prototype-jp2-validator-and-properties-extractor">A prototype JP2 validator and properties extractor</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>September</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2011/09/21/evaluation-identification-tools-first-results-scape">Evaluation of identification tools&#58; first results from SCAPE</a></li>
+	
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2011/09/01/simple-jp2-file-structure-checker">A simple JP2 file structure checker</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>July</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2011/07/11/improved-identification-xml-python-experiment">Improved identification of XML&#58; a Python experiment</a></li>
+	
+    
+          
+        
+          </ul>
+          <h3>June</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2011/06/06/paper-jpeg-2000-preservation-9">Paper on JPEG 2000 for preservation</a></li>
+	
+    
+      
+        </ul>
+        </details>
+        <details>
+        <summary>2010</summary>
+        <h3>December</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+	<li><a href="/2010/12/02/ensuring-suitability-of-jpeg">Ensuring the suitability of JPEG 2000 for preservation</a></li>
+	
+    
+      </ul>
+    
+  
+
+
+
+          </div>
+
+      </div>
+
+      <div class="sidebarGroup">
+        <h2>Social</h2>
+        <h3><a href="https://twitter.com/bitsgalore" target="_blank">Twitter</a></h3>
+        <h3><a href="https://digipres.club/@bitsgalore" target="_blank">Mastodon (digipres.club)</a></h3>
+        <h3><a href="https://github.com/bitsgalore/bitsgalore.github.io/issues" target="_blank">Report a problem with this site</a></h3>
+      </div>
+
+      <div class="sidebarGroup">
+        <h2>Feeds</h2>
+        <h3><a href="/rss.xml">RSS</a></h3>
+        <h3><a href="/atom.xml">ATOM</a></h3>
+      </div>
+
+      </div>
+
+      <div id="footer">
+
+        <div id="sidebarFooterLeft">
+          <!-- Empty -->
+        </div>
+
+        <footer>
+	      <p><small>&copy; 2021 Johan van der Knijff
+            with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+            and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a></small></p>
+        </footer>
+
+      </div>	
+
+    </div>
+
+  </body>
+</html>
